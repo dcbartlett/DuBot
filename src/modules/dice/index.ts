@@ -31,8 +31,8 @@ export class Dice {
       max = message[1];
     }
     if (!max) {
-      min = '1';
-      max = '100';
+      min = "1";
+      max = "100";
     }
     
     const randomNumber = this.getRandomInt(parseInt(min), parseInt(max) + 1);
@@ -41,7 +41,6 @@ export class Dice {
   }
   
   private getRandomInt(min, max) {
-    console.log(min, max)
     min = Math.ceil(min);
     max = Math.floor(max);
     // The maximum is exclusive and the minimum is inclusive
