@@ -1,0 +1,34 @@
+{
+  "token": "Mjk2MTI0OTg0MDg1MTg0NTE0.C7trcw.K0ZF26yDCQqG5nSz0tI--c5PKpk",
+  "prefix": "!",
+  "channel": "149195002831044609",
+  "streamOptions": {
+    "seek": 0,
+    "volume": 1
+  },
+  "cleanup": true,
+  "roles": {
+    "admins": [
+      115592807720157180
+    ],
+    "mods": [
+      107572225854431230
+    ],
+    "crazy": []
+  },
+  "radioReturn": true,
+  "stage": "stage",
+  "playlists_folder": "playlists",
+  "resume_incomplete": true,
+  "language_filter": {
+    "running": true,
+    "filter_items": [
+      "flubber",
+      "not flubber",
+      "bob"
+    ],
+    "filter_msg": "Nice try now I shall kick yo ass!",
+    "kickban": "off",
+    "warnings": 3
+  }
+}
