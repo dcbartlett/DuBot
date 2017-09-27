@@ -1,7 +1,3 @@
-// export { AppPage } from "./app";
+export { CommandProcessor, DiscordChannels, MagicEightBall, Dice } from "./core/index";
 
 // export * as audioDispatcher from "./audioDispatcher";
-export { CommandProcessor } from "./commandProcessor";
-export { DiscordChannels } from "./discordChannels";
-export { MagicEightBall } from "./magicEightBall";
-export { Dice } from "./dice";

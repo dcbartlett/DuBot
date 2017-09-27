@@ -1,6 +1,6 @@
 import * as Discord from "discord.js";
 import * as pm2 from "pm2";
-import { EventBus } from "./eventBus";
+import { EventBus } from "../eventBus";
 
 class CoreClass {
   private options: Object = {};
