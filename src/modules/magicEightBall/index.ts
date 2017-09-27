@@ -23,7 +23,7 @@ export class MagicEightBall {
   private eightBall(caller) {
     const message = caller.content.split(" ");
     message.shift();
-    let response = [
+    const response = [
       "It is certain",
       "It is decidedly so",
       "Without a doubt",
@@ -45,7 +45,7 @@ export class MagicEightBall {
       "Outlook not so good",
       "Very doubtful"
     ];
-    let randomNumber = this.getRandomInt(1, response.length);
+    const randomNumber = this.getRandomInt(0, response.length);
     
     EventBus.emit("sendMessage", {caller: caller , msg: response[randomNumber] });
   }
@@ -53,7 +53,7 @@ export class MagicEightBall {
   private getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    //The maximum is exclusive and the minimum is inclusive
+    // The maximum is exclusive and the minimum is inclusive
     return Math.floor(Math.random() * (max - min)) + min;
   }
 }

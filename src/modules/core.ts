@@ -11,7 +11,7 @@ class CoreClass {
     // Connect to discord and setup Session
     this.client.login("MjExNzU3NTkyODE5NjYyODQ4.DKuBMw.sNt2gej6sQ9zZZV0SojA-zSZeFk");
 
-    this.client.on('ready', () => {
+    this.client.on("ready", () => {
       console.log(`Logged in as ${this.client.user.username}!`);
       const channel = this.client.channels.get("149195002831044609") as Discord.VoiceChannel;
           
@@ -70,7 +70,7 @@ class CoreClass {
     const voiceServer = this.client.voiceConnections.first();
     voiceServer.channel.leave();
     voiceServer.disconnect();
-    this.client.user.setGame(null);
+    this.client.user.setGame(undefined);
     if (pm2Process) {
       pm2.restart(pm2Process);
     } else {
