@@ -89,7 +89,7 @@ export const Core = () => {
   if (instantiatedCore) {
     return instantiatedCore;
   } else {
-    instantiatedCore = new CoreClass();;
+    instantiatedCore = new CoreClass();
     return instantiatedCore;
   }
 };
