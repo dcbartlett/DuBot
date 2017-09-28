@@ -1,7 +1,8 @@
 # Du Bot
 ## Everything you need from a discord bot, completely modular
 
-[![Dependency Status](https://david-dm.org/Microsoft/TypeScript-Node-Starter.svg)](https://david-dm.org/Microsoft/TypeScript-Node-Starter) [![Build Status](https://travis-ci.org/Microsoft/TypeScript-Node-Starter.svg?branch=master)](https://travis-ci.org/Microsoft/TypeScript-Node-Starter) 
+<!--[![Dependency Status](https://david-dm.org/Microsoft/TypeScript-Node-Starter.svg)](https://david-dm.org/Microsoft/TypeScript-Node-Starter) -->
+[![Build Status](https://travis-ci.org/theguy404/DuBot.svg?branch=master)](https://travis-ci.org/theguy404/DuBot) 
 
 # Pre-reqs
 - Install [Node.js](https://nodejs.org/en/)
