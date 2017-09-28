@@ -8,6 +8,7 @@ class CoreClass {
   private client: Discord.Client = new Discord.Client(this.options);
 
   constructor() {
+    
     // Connect to discord and setup Session
     this.client.login("MjExNzU3NTkyODE5NjYyODQ4.DKuBMw.sNt2gej6sQ9zZZV0SojA-zSZeFk");
 
@@ -24,6 +25,9 @@ class CoreClass {
           restart: this.restart.bind(this)
         }
       };
+      
+      process.on("beforeExit", this.gracefulQuit.bind(this));
+      process.on("SIGINT", this.gracefulQuit.bind(this));
   
       EventBus.emit("register", this.registration);
     });
@@ -79,8 +83,13 @@ class CoreClass {
   }
 }
 
-const staticCore = new CoreClass();
+let instantiatedCore;
 
 export const Core = () => {
-  return staticCore;
+  if (instantiatedCore) {
+    return instantiatedCore;
+  } else {
+    instantiatedCore = new CoreClass();;
+    return instantiatedCore;
+  }
 };
