@@ -43,7 +43,9 @@
     "dotenv": "^2.0.0",
     "errorhandler": "^1.4.3",
     "lodash": "^4.17.4",
-    "pm2": "^2.7.1"
+    "pm2": "^2.7.1",
+    "superagent": "^3.6.0",
+    "superagent-jsonapify": "^1.4.5"
   },
   "devDependencies": {
     "@types/async": "^2.0.40",
